@@ -1,4 +1,4 @@
-# My Exercism Answers with best others 
+# My Exercism Answers with others best
 
 This repo created for comparing my skills with others in exercism problems.
 
