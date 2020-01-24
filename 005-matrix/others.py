@@ -15,3 +15,19 @@ class Matrix1(object):
     @property
     def columns(self):
         return map(list, zip(*self._matrix))
+
+
+'''
+This solution is extracted during mentoring other solution. Not starred but its an excellent solution!
+'''
+
+
+class Matrix2:
+    def __init__(self, matrix_string):
+        self.rows = [[int(number) for number in line.split()] for line in matrix_string.splitlines()]
+
+    def row(self, index):
+        return self.rows[index - 1]
+
+    def column(self, index):
+        return [row[index - 1] for row in self.rows]
