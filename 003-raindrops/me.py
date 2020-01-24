@@ -1,13 +1,9 @@
-import typing
-import mypy
-
 def convert(number: int) -> str:
-    out = ''
+    out = ""
     if number % 3 == 0:
-        out += 'Pling'
+        out += "Pling"
     if number % 5 == 0:
-        out += 'Plang'
+        out += "Plang"
     if number % 7 == 0:
-        out += 'Plong'
+        out += "Plong"
     return out if out else str(number)
-

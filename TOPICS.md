@@ -38,4 +38,3 @@ All the items in .gitignore is choosed from **ref02**:
 4. https://www.python.org/dev/peps/pep-0526/#preferred-coding-style-for-variable-annotations
 5. https://pep8.org/
 6. https://www.python.org/dev/peps/pep-0257/
-

@@ -22,6 +22,7 @@ def personal_best(scores: List) -> int:
     # return max(scores)
     # solution 2: using heap
     import heapq
+
     return heapq.nlargest(1, scores)[0]
 
 
@@ -36,4 +37,5 @@ def personal_top_three(scores):
 
     # solution 2: using heap
     import heapq
+
     return heapq.nlargest(3, scores)

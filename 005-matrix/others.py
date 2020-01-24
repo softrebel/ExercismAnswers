@@ -4,9 +4,9 @@ class Matrix:
         self.columns = [list(l) for l in zip(*self.rows)]
 
 
-class Matrix(object):
+class Matrix1(object):
     def __init__(self, matrix_string):
-        self._matrix = [map(int, r.split()) for r in matrix_string.split('\n')]
+        self._matrix = [map(int, r.split()) for r in matrix_string.split("\n")]
 
     @property
     def rows(self):

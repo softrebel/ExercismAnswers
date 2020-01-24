@@ -16,7 +16,11 @@ class HighScores(object):
 
     def report(self):
         if self.latest() == self.highest():
-            return "Your latest score was %d. That's your personal best!" % self.latest()
+            return (
+                "Your latest score was %d. That's your personal best!" % self.latest()
+            )
         else:
-            return "Your latest score was %d. That's %d short of your personal best!" % (
-            self.latest(), self.highest() - self.latest())
+            return (
+                "Your latest score was %d. That's %d short of your personal best!"
+                % (self.latest(), self.highest() - self.latest())
+            )
