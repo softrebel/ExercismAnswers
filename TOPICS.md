@@ -31,9 +31,11 @@ All the items in .gitignore is choosed from **ref02**:
 - _env_ or _venv_ for virtual environment
 - _.mypy_cache_ for mypy cache that created during the command `mypy`
 
-refs:
+## References:
 1. https://realpython.com/python-type-checking/
 2. https://github.com/github/gitignore/blob/master/Python.gitignore
 3. https://www.python.org/dev/peps/pep-0484/#which-brackets-for-generic-type-parameters
 4. https://www.python.org/dev/peps/pep-0526/#preferred-coding-style-for-variable-annotations
+5. https://pep8.org/
+6. https://www.python.org/dev/peps/pep-0257/
 
