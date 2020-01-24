@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+build/
+dist/
+wheels/
+.env
+.idea
+.mypy_cache
+env/
+venv/

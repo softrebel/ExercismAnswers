@@ -1,4 +1,8 @@
-def convert(number):
+import typing
+import mypy
+
+
+def convert(number: int) -> str:
     out = ''
     if number % 3 == 0:
         out += 'Pling'
