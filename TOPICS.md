@@ -31,6 +31,40 @@ All the items in .gitignore is choosed from **ref02**:
 - _env_ or _venv_ for virtual environment
 - _.mypy_cache_ for mypy cache that created during the command `mypy`
 
+### precomit
+First of all, install module **pre-commit**:
+
+1. `pip install pre-commit`.
+2. create file in root of repo with name: ```.pre-commit-config.yaml```
+3. add this lines to the ```.pre-commit-config.yaml```:
+    ```yaml
+    repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v2.3.0
+        hooks:
+        -   id: check-yaml
+        -   id: end-of-file-fixer
+        -   id: trailing-whitespace
+
+    -   repo: https://github.com/PyCQA/pylint
+        rev: pylint-2.4.4
+        hooks:
+        -   id: pylint
+            args: ["--errors-only"]
+    ```
+4. Use this command to create pre-commit file in `.git/hooks/`:
+
+    `pre-commit install`
+
+Now the repo has pre-commit hook with checking these steps:
+
+    - check-yaml
+    - end-of-file-fixer
+    - trailing-whitespace
+    - pylint
+
+To get more information, visit **ref07**
+
 ## References:
 1. https://realpython.com/python-type-checking/
 2. https://github.com/github/gitignore/blob/master/Python.gitignore
@@ -38,3 +72,4 @@ All the items in .gitignore is choosed from **ref02**:
 4. https://www.python.org/dev/peps/pep-0526/#preferred-coding-style-for-variable-annotations
 5. https://pep8.org/
 6. https://www.python.org/dev/peps/pep-0257/
+7. https://pre-commit.com/
