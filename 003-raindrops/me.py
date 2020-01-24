@@ -1,7 +1,6 @@
 import typing
 import mypy
 
-
 def convert(number: int) -> str:
     out = ''
     if number % 3 == 0:
@@ -11,3 +10,4 @@ def convert(number: int) -> str:
     if number % 7 == 0:
         out += 'Plong'
     return out if out else str(number)
+
