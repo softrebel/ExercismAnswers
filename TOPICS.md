@@ -17,7 +17,7 @@ Found 1 error in 1 file (checked 1 source file)
 ```
 ### type pros:
 - Easy to documenting. Also there are a lot of module exist that auto generate documents from typed style code in python.
-this advantage has been used in distrubuted languages such as GoLang,Rust to auto-generate documentation from strict type.
+This advantage has been used in distrubuted languages such as GoLang,Rust to auto-generate documentation from strict type.
 - Improve IDEs & linters to create structure of your code to hint some efficient suggestions and refactors.
 ### type cons:
 - It takes times to add types.
