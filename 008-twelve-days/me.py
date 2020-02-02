@@ -1,4 +1,6 @@
-days_text = [
+from typing import List, Dict
+
+days_text: List[str] = [
     "twelve Drummers Drumming, ",
     "eleven Pipers Piping, ",
     "ten Lords-a-Leaping, ",
@@ -13,7 +15,7 @@ days_text = [
     "and a Partridge in a Pear Tree."
 ]
 
-days_number = {
+days_number: Dict[int, str] = {
     1: 'first',
     2: 'second',
     3: 'third',
@@ -29,14 +31,14 @@ days_number = {
 }
 
 
-def rec(n):
+def rec(n: int) -> List[str]:
     out = "On the {day} day of Christmas my true love gave to me: ".format(day=days_number[n])
 
     recites = ''.join(days_text[(-1) * n:] if n != 1 else [days_text[-1].replace('and ', '')])
     return [out + recites]
 
 
-def recite(start_verse, end_verse):
+def recite(start_verse: int, end_verse: int) -> List[str]:
     import itertools
     if start_verse != end_verse:
         verse = list(itertools.chain(*[rec(i) for i in range(start_verse, end_verse + 1)]))

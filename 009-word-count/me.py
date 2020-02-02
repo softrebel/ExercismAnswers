@@ -1,18 +1,19 @@
 import string, re
+from typing import Pattern, Dict, List
 
-punctuation = string.punctuation.replace('\'', '')
-punctuation_trans = str.maketrans({key: ' ' for key in punctuation})
-regex = re.compile(r'[{}\s]+'.format(re.escape(punctuation)))
+punctuation: str = string.punctuation.replace('\'', '')
+punctuation_trans: object = str.maketrans({key: ' ' for key in punctuation})
+regex: Pattern[str] = re.compile(r'[{}\s]+'.format(re.escape(punctuation)))
 
 
-def count_words(sentence):
-    sentence = sentence.lower()
-    frequent = dict()
+def count_words(sentence: str) -> Dict[str, int]:
+    sentence: str = sentence.lower()
+    frequent: Dict[str, int] = dict()
 
-    ### regex
-    words = regex.split(sentence)
+    # regex
+    words: List[str] = regex.split(sentence)
 
-    ### translate (faster than regex)
+    # translate (faster than regex)
 
     # words = sentence.translate(punctuation_trans).lower().split()
 

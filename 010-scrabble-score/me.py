@@ -1,7 +1,7 @@
 from functools import reduce
 import operator
-
-letters = {
+from typing import Dict
+letters: Dict[str,int] = {
     'A': 1,
     'E': 1,
     'I': 1,
@@ -31,7 +31,7 @@ letters = {
 }
 
 
-def score(word):
+def score(word: str) -> int:
     if not word:
         return 0
     return reduce(operator.add, [letters[a.upper()] if a.upper() in letters.keys() else 0 for a in list(word)])
