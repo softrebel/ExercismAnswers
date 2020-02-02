@@ -73,3 +73,6 @@ To get more information, visit **ref07**
 5. https://pep8.org/
 6. https://www.python.org/dev/peps/pep-0257/
 7. https://pre-commit.com/
+8. https://github.com/zedr/clean-code-python
+9. https://github.com/PacktPublishing/Clean-Code-in-Python
+10. https://realpython.com/python-testing/
